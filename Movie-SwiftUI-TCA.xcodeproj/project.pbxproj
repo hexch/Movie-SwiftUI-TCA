@@ -14,6 +14,46 @@
 		C70D3B9028110BE6002C2C36 /* Movie_SwiftUI_TCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3B8F28110BE6002C2C36 /* Movie_SwiftUI_TCATests.swift */; };
 		C70D3B9A28110BE6002C2C36 /* Movie_SwiftUI_TCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3B9928110BE6002C2C36 /* Movie_SwiftUI_TCAUITests.swift */; };
 		C70D3B9C28110BE6002C2C36 /* Movie_SwiftUI_TCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3B9B28110BE6002C2C36 /* Movie_SwiftUI_TCAUITestsLaunchTests.swift */; };
+		C70D3BDF28111083002C2C36 /* MovieApiFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = C70D3BDE28111083002C2C36 /* MovieApiFramework.docc */; };
+		C70D3BE528111083002C2C36 /* MovieApiFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70D3BDB28111083002C2C36 /* MovieApiFramework.framework */; };
+		C70D3BED28111083002C2C36 /* MovieApiFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = C70D3BDD28111083002C2C36 /* MovieApiFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C70D3BF028111083002C2C36 /* MovieApiFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70D3BDB28111083002C2C36 /* MovieApiFramework.framework */; };
+		C70D3BF128111083002C2C36 /* MovieApiFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C70D3BDB28111083002C2C36 /* MovieApiFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C70D3BFB28112184002C2C36 /* MovieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3BFA28112184002C2C36 /* MovieApi.swift */; };
+		C70D3BFD2811218F002C2C36 /* MovieApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3BFC2811218F002C2C36 /* MovieApiError.swift */; };
+		C70D3C01281121C9002C2C36 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C00281121C9002C2C36 /* Genre.swift */; };
+		C70D3C03281121E6002C2C36 /* MovieApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C02281121E6002C2C36 /* MovieApiResponse.swift */; };
+		C70D3C05281121F5002C2C36 /* GenresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C04281121F5002C2C36 /* GenresResponse.swift */; };
+		C70D3C4D28112252002C2C36 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C70D3C0828112252002C2C36 /* LICENSE */; };
+		C70D3C4E28112252002C2C36 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C70D3C0928112252002C2C36 /* README.md */; };
+		C70D3C4F28112252002C2C36 /* LSStubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C0C28112252002C2C36 /* LSStubRequest.m */; };
+		C70D3C5028112252002C2C36 /* LSStubResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C0D28112252002C2C36 /* LSStubResponse.m */; };
+		C70D3C5128112252002C2C36 /* LSNocilla.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C1028112252002C2C36 /* LSNocilla.m */; };
+		C70D3C5228112252002C2C36 /* LSHTTPRequestDiff.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C1328112252002C2C36 /* LSHTTPRequestDiff.m */; };
+		C70D3C5328112252002C2C36 /* LSHTTPClientHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C1728112252002C2C36 /* LSHTTPClientHook.m */; };
+		C70D3C5428112252002C2C36 /* NSURLRequest+LSHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C1A28112252002C2C36 /* NSURLRequest+LSHTTPRequest.m */; };
+		C70D3C5528112252002C2C36 /* LSNSURLHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C1F28112252002C2C36 /* LSNSURLHook.m */; };
+		C70D3C5628112252002C2C36 /* NSURLRequest+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C2028112252002C2C36 /* NSURLRequest+DSL.m */; };
+		C70D3C5728112252002C2C36 /* LSHTTPStubURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C2128112252002C2C36 /* LSHTTPStubURLProtocol.m */; };
+		C70D3C5828112252002C2C36 /* ASIHTTPRequestStub.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C2428112252002C2C36 /* ASIHTTPRequestStub.m */; };
+		C70D3C5928112252002C2C36 /* LSASIHTTPRequestHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C2628112252002C2C36 /* LSASIHTTPRequestHook.m */; };
+		C70D3C5A28112252002C2C36 /* LSASIHTTPRequestAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C2728112252002C2C36 /* LSASIHTTPRequestAdapter.m */; };
+		C70D3C5B28112252002C2C36 /* LSNSURLSessionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C2B28112252002C2C36 /* LSNSURLSessionHook.m */; };
+		C70D3C5C28112252002C2C36 /* NSRegularExpression+Matcheable.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C3528112252002C2C36 /* NSRegularExpression+Matcheable.m */; };
+		C70D3C5D28112252002C2C36 /* NSString+Matcheable.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C3728112252002C2C36 /* NSString+Matcheable.m */; };
+		C70D3C5E28112252002C2C36 /* NSData+Matcheable.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C3828112252002C2C36 /* NSData+Matcheable.m */; };
+		C70D3C5F28112252002C2C36 /* LSDataMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C3928112252002C2C36 /* LSDataMatcher.m */; };
+		C70D3C6028112252002C2C36 /* LSMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C3A28112252002C2C36 /* LSMatcher.m */; };
+		C70D3C6128112252002C2C36 /* LSRegexMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C3B28112252002C2C36 /* LSRegexMatcher.m */; };
+		C70D3C6228112252002C2C36 /* LSStringMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C3D28112252002C2C36 /* LSStringMatcher.m */; };
+		C70D3C6328112252002C2C36 /* NSString+Nocilla.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C4328112252002C2C36 /* NSString+Nocilla.m */; };
+		C70D3C6428112252002C2C36 /* NSData+Nocilla.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C4428112252002C2C36 /* NSData+Nocilla.m */; };
+		C70D3C6528112252002C2C36 /* LSHTTPRequestDSLRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C4728112252002C2C36 /* LSHTTPRequestDSLRepresentation.m */; };
+		C70D3C6628112252002C2C36 /* LSStubResponseDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C4928112252002C2C36 /* LSStubResponseDSL.m */; };
+		C70D3C6728112252002C2C36 /* LSStubRequestDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C4A28112252002C2C36 /* LSStubRequestDSL.m */; };
+		C70D3C6A2811234E002C2C36 /* MovieApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C692811234E002C2C36 /* MovieApiTests.swift */; };
+		C70D3C6D281123D9002C2C36 /* StubUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C6C281123D9002C2C36 /* StubUtils.swift */; };
+		C70D3C6F281123E4002C2C36 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C6E281123E4002C2C36 /* TestUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +71,42 @@
 			remoteGlobalIDString = C70D3B7A28110BE6002C2C36;
 			remoteInfo = "Movie-SwiftUI-TCA";
 		};
+		C70D3BE628111083002C2C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70D3B7328110BE5002C2C36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70D3BDA28111083002C2C36;
+			remoteInfo = MovieApiFramework;
+		};
+		C70D3BE828111083002C2C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70D3B7328110BE5002C2C36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70D3B7A28110BE6002C2C36;
+			remoteInfo = "Movie-SwiftUI-TCA";
+		};
+		C70D3BEE28111083002C2C36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70D3B7328110BE5002C2C36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C70D3BDA28111083002C2C36;
+			remoteInfo = MovieApiFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C70D3BF528111083002C2C36 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C70D3BF128111083002C2C36 /* MovieApiFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C70D3B7B28110BE6002C2C36 /* Movie-SwiftUI-TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-SwiftUI-TCA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +119,77 @@
 		C70D3B9528110BE6002C2C36 /* Movie-SwiftUI-TCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie-SwiftUI-TCAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70D3B9928110BE6002C2C36 /* Movie_SwiftUI_TCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_SwiftUI_TCAUITests.swift; sourceTree = "<group>"; };
 		C70D3B9B28110BE6002C2C36 /* Movie_SwiftUI_TCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_SwiftUI_TCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C70D3BDB28111083002C2C36 /* MovieApiFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieApiFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70D3BDD28111083002C2C36 /* MovieApiFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieApiFramework.h; sourceTree = "<group>"; };
+		C70D3BDE28111083002C2C36 /* MovieApiFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MovieApiFramework.docc; sourceTree = "<group>"; };
+		C70D3BE428111083002C2C36 /* MovieApiFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieApiFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70D3BFA28112184002C2C36 /* MovieApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApi.swift; sourceTree = "<group>"; };
+		C70D3BFC2811218F002C2C36 /* MovieApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiError.swift; sourceTree = "<group>"; };
+		C70D3C00281121C9002C2C36 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		C70D3C02281121E6002C2C36 /* MovieApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiResponse.swift; sourceTree = "<group>"; };
+		C70D3C04281121F5002C2C36 /* GenresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresResponse.swift; sourceTree = "<group>"; };
+		C70D3C0828112252002C2C36 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C70D3C0928112252002C2C36 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C70D3C0C28112252002C2C36 /* LSStubRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStubRequest.m; sourceTree = "<group>"; };
+		C70D3C0D28112252002C2C36 /* LSStubResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStubResponse.m; sourceTree = "<group>"; };
+		C70D3C0E28112252002C2C36 /* LSStubResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStubResponse.h; sourceTree = "<group>"; };
+		C70D3C0F28112252002C2C36 /* LSStubRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStubRequest.h; sourceTree = "<group>"; };
+		C70D3C1028112252002C2C36 /* LSNocilla.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNocilla.m; sourceTree = "<group>"; };
+		C70D3C1128112252002C2C36 /* Nocilla-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Nocilla-Prefix.pch"; sourceTree = "<group>"; };
+		C70D3C1328112252002C2C36 /* LSHTTPRequestDiff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHTTPRequestDiff.m; sourceTree = "<group>"; };
+		C70D3C1428112252002C2C36 /* LSHTTPRequestDiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequestDiff.h; sourceTree = "<group>"; };
+		C70D3C1528112252002C2C36 /* Nocilla.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nocilla.h; sourceTree = "<group>"; };
+		C70D3C1728112252002C2C36 /* LSHTTPClientHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHTTPClientHook.m; sourceTree = "<group>"; };
+		C70D3C1828112252002C2C36 /* LSHTTPClientHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHTTPClientHook.h; sourceTree = "<group>"; };
+		C70D3C1A28112252002C2C36 /* NSURLRequest+LSHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+LSHTTPRequest.m"; sourceTree = "<group>"; };
+		C70D3C1B28112252002C2C36 /* NSURLRequest+DSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+DSL.h"; sourceTree = "<group>"; };
+		C70D3C1C28112252002C2C36 /* LSNSURLHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNSURLHook.h; sourceTree = "<group>"; };
+		C70D3C1D28112252002C2C36 /* LSHTTPStubURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHTTPStubURLProtocol.h; sourceTree = "<group>"; };
+		C70D3C1E28112252002C2C36 /* NSURLRequest+LSHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+LSHTTPRequest.h"; sourceTree = "<group>"; };
+		C70D3C1F28112252002C2C36 /* LSNSURLHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNSURLHook.m; sourceTree = "<group>"; };
+		C70D3C2028112252002C2C36 /* NSURLRequest+DSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+DSL.m"; sourceTree = "<group>"; };
+		C70D3C2128112252002C2C36 /* LSHTTPStubURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHTTPStubURLProtocol.m; sourceTree = "<group>"; };
+		C70D3C2328112252002C2C36 /* LSASIHTTPRequestHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSASIHTTPRequestHook.h; sourceTree = "<group>"; };
+		C70D3C2428112252002C2C36 /* ASIHTTPRequestStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequestStub.m; sourceTree = "<group>"; };
+		C70D3C2528112252002C2C36 /* LSASIHTTPRequestAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSASIHTTPRequestAdapter.h; sourceTree = "<group>"; };
+		C70D3C2628112252002C2C36 /* LSASIHTTPRequestHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSASIHTTPRequestHook.m; sourceTree = "<group>"; };
+		C70D3C2728112252002C2C36 /* LSASIHTTPRequestAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSASIHTTPRequestAdapter.m; sourceTree = "<group>"; };
+		C70D3C2828112252002C2C36 /* ASIHTTPRequestStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestStub.h; sourceTree = "<group>"; };
+		C70D3C2A28112252002C2C36 /* LSNSURLSessionHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNSURLSessionHook.h; sourceTree = "<group>"; };
+		C70D3C2B28112252002C2C36 /* LSNSURLSessionHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNSURLSessionHook.m; sourceTree = "<group>"; };
+		C70D3C2D28112252002C2C36 /* LSHTTPBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHTTPBody.h; sourceTree = "<group>"; };
+		C70D3C2E28112252002C2C36 /* LSHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequest.h; sourceTree = "<group>"; };
+		C70D3C2F28112252002C2C36 /* LSHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHTTPResponse.h; sourceTree = "<group>"; };
+		C70D3C3028112252002C2C36 /* LSNocilla.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNocilla.h; sourceTree = "<group>"; };
+		C70D3C3228112252002C2C36 /* LSMatcheable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMatcheable.h; sourceTree = "<group>"; };
+		C70D3C3328112252002C2C36 /* LSMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMatcher.h; sourceTree = "<group>"; };
+		C70D3C3428112252002C2C36 /* LSStringMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStringMatcher.h; sourceTree = "<group>"; };
+		C70D3C3528112252002C2C36 /* NSRegularExpression+Matcheable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+Matcheable.m"; sourceTree = "<group>"; };
+		C70D3C3628112252002C2C36 /* LSRegexMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSRegexMatcher.h; sourceTree = "<group>"; };
+		C70D3C3728112252002C2C36 /* NSString+Matcheable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Matcheable.m"; sourceTree = "<group>"; };
+		C70D3C3828112252002C2C36 /* NSData+Matcheable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Matcheable.m"; sourceTree = "<group>"; };
+		C70D3C3928112252002C2C36 /* LSDataMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDataMatcher.m; sourceTree = "<group>"; };
+		C70D3C3A28112252002C2C36 /* LSMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSMatcher.m; sourceTree = "<group>"; };
+		C70D3C3B28112252002C2C36 /* LSRegexMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSRegexMatcher.m; sourceTree = "<group>"; };
+		C70D3C3C28112252002C2C36 /* NSRegularExpression+Matcheable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+Matcheable.h"; sourceTree = "<group>"; };
+		C70D3C3D28112252002C2C36 /* LSStringMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStringMatcher.m; sourceTree = "<group>"; };
+		C70D3C3E28112252002C2C36 /* NSString+Matcheable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Matcheable.h"; sourceTree = "<group>"; };
+		C70D3C3F28112252002C2C36 /* LSDataMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDataMatcher.h; sourceTree = "<group>"; };
+		C70D3C4028112252002C2C36 /* NSData+Matcheable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Matcheable.h"; sourceTree = "<group>"; };
+		C70D3C4228112252002C2C36 /* NSData+Nocilla.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Nocilla.h"; sourceTree = "<group>"; };
+		C70D3C4328112252002C2C36 /* NSString+Nocilla.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Nocilla.m"; sourceTree = "<group>"; };
+		C70D3C4428112252002C2C36 /* NSData+Nocilla.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Nocilla.m"; sourceTree = "<group>"; };
+		C70D3C4528112252002C2C36 /* NSString+Nocilla.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Nocilla.h"; sourceTree = "<group>"; };
+		C70D3C4728112252002C2C36 /* LSHTTPRequestDSLRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSHTTPRequestDSLRepresentation.m; sourceTree = "<group>"; };
+		C70D3C4828112252002C2C36 /* LSStubRequestDSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStubRequestDSL.h; sourceTree = "<group>"; };
+		C70D3C4928112252002C2C36 /* LSStubResponseDSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStubResponseDSL.m; sourceTree = "<group>"; };
+		C70D3C4A28112252002C2C36 /* LSStubRequestDSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStubRequestDSL.m; sourceTree = "<group>"; };
+		C70D3C4B28112252002C2C36 /* LSHTTPRequestDSLRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSHTTPRequestDSLRepresentation.h; sourceTree = "<group>"; };
+		C70D3C4C28112252002C2C36 /* LSStubResponseDSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStubResponseDSL.h; sourceTree = "<group>"; };
+		C70D3C68281122B9002C2C36 /* MovieApiFrameworkTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovieApiFrameworkTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		C70D3C692811234E002C2C36 /* MovieApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiTests.swift; sourceTree = "<group>"; };
+		C70D3C6C281123D9002C2C36 /* StubUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUtils.swift; sourceTree = "<group>"; };
+		C70D3C6E281123E4002C2C36 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70D3BF028111083002C2C36 /* MovieApiFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +215,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C70D3BD828111083002C2C36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70D3BE128111083002C2C36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70D3BE528111083002C2C36 /* MovieApiFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +239,8 @@
 				C70D3B7D28110BE6002C2C36 /* Movie-SwiftUI-TCA */,
 				C70D3B8E28110BE6002C2C36 /* Movie-SwiftUI-TCATests */,
 				C70D3B9828110BE6002C2C36 /* Movie-SwiftUI-TCAUITests */,
+				C70D3BDC28111083002C2C36 /* MovieApiFramework */,
+				C70D3BEA28111083002C2C36 /* MovieApiFrameworkTests */,
 				C70D3B7C28110BE6002C2C36 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +251,8 @@
 				C70D3B7B28110BE6002C2C36 /* Movie-SwiftUI-TCA.app */,
 				C70D3B8B28110BE6002C2C36 /* Movie-SwiftUI-TCATests.xctest */,
 				C70D3B9528110BE6002C2C36 /* Movie-SwiftUI-TCAUITests.xctest */,
+				C70D3BDB28111083002C2C36 /* MovieApiFramework.framework */,
+				C70D3BE428111083002C2C36 /* MovieApiFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,7 +293,237 @@
 			path = "Movie-SwiftUI-TCAUITests";
 			sourceTree = "<group>";
 		};
+		C70D3BDC28111083002C2C36 /* MovieApiFramework */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3BF928111094002C2C36 /* Sources */,
+				C70D3BDD28111083002C2C36 /* MovieApiFramework.h */,
+				C70D3BDE28111083002C2C36 /* MovieApiFramework.docc */,
+			);
+			path = MovieApiFramework;
+			sourceTree = "<group>";
+		};
+		C70D3BEA28111083002C2C36 /* MovieApiFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C692811234E002C2C36 /* MovieApiTests.swift */,
+				C70D3C6B281123C4002C2C36 /* Utils */,
+				C70D3C0628112219002C2C36 /* Dependency */,
+			);
+			path = MovieApiFrameworkTests;
+			sourceTree = "<group>";
+		};
+		C70D3BF928111094002C2C36 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3BFE281121BA002C2C36 /* Models */,
+				C70D3BFA28112184002C2C36 /* MovieApi.swift */,
+				C70D3BFC2811218F002C2C36 /* MovieApiError.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C70D3BFE281121BA002C2C36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3BFF281121BF002C2C36 /* Responses */,
+				C70D3C00281121C9002C2C36 /* Genre.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C70D3BFF281121BF002C2C36 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C02281121E6002C2C36 /* MovieApiResponse.swift */,
+				C70D3C04281121F5002C2C36 /* GenresResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		C70D3C0628112219002C2C36 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C0728112252002C2C36 /* Nocilla */,
+				C70D3C68281122B9002C2C36 /* MovieApiFrameworkTests-Bridging-Header.h */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		C70D3C0728112252002C2C36 /* Nocilla */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C0828112252002C2C36 /* LICENSE */,
+				C70D3C0928112252002C2C36 /* README.md */,
+				C70D3C0A28112252002C2C36 /* Nocilla */,
+			);
+			path = Nocilla;
+			sourceTree = "<group>";
+		};
+		C70D3C0A28112252002C2C36 /* Nocilla */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C0B28112252002C2C36 /* Stubs */,
+				C70D3C1028112252002C2C36 /* LSNocilla.m */,
+				C70D3C1128112252002C2C36 /* Nocilla-Prefix.pch */,
+				C70D3C1228112252002C2C36 /* Diff */,
+				C70D3C1528112252002C2C36 /* Nocilla.h */,
+				C70D3C1628112252002C2C36 /* Hooks */,
+				C70D3C2C28112252002C2C36 /* Model */,
+				C70D3C3028112252002C2C36 /* LSNocilla.h */,
+				C70D3C3128112252002C2C36 /* Matchers */,
+				C70D3C4128112252002C2C36 /* Categories */,
+				C70D3C4628112252002C2C36 /* DSL */,
+			);
+			path = Nocilla;
+			sourceTree = "<group>";
+		};
+		C70D3C0B28112252002C2C36 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C0C28112252002C2C36 /* LSStubRequest.m */,
+				C70D3C0D28112252002C2C36 /* LSStubResponse.m */,
+				C70D3C0E28112252002C2C36 /* LSStubResponse.h */,
+				C70D3C0F28112252002C2C36 /* LSStubRequest.h */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		C70D3C1228112252002C2C36 /* Diff */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C1328112252002C2C36 /* LSHTTPRequestDiff.m */,
+				C70D3C1428112252002C2C36 /* LSHTTPRequestDiff.h */,
+			);
+			path = Diff;
+			sourceTree = "<group>";
+		};
+		C70D3C1628112252002C2C36 /* Hooks */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C1728112252002C2C36 /* LSHTTPClientHook.m */,
+				C70D3C1828112252002C2C36 /* LSHTTPClientHook.h */,
+				C70D3C1928112252002C2C36 /* NSURLRequest */,
+				C70D3C2228112252002C2C36 /* ASIHTTPRequest */,
+				C70D3C2928112252002C2C36 /* NSURLSession */,
+			);
+			path = Hooks;
+			sourceTree = "<group>";
+		};
+		C70D3C1928112252002C2C36 /* NSURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C1A28112252002C2C36 /* NSURLRequest+LSHTTPRequest.m */,
+				C70D3C1B28112252002C2C36 /* NSURLRequest+DSL.h */,
+				C70D3C1C28112252002C2C36 /* LSNSURLHook.h */,
+				C70D3C1D28112252002C2C36 /* LSHTTPStubURLProtocol.h */,
+				C70D3C1E28112252002C2C36 /* NSURLRequest+LSHTTPRequest.h */,
+				C70D3C1F28112252002C2C36 /* LSNSURLHook.m */,
+				C70D3C2028112252002C2C36 /* NSURLRequest+DSL.m */,
+				C70D3C2128112252002C2C36 /* LSHTTPStubURLProtocol.m */,
+			);
+			path = NSURLRequest;
+			sourceTree = "<group>";
+		};
+		C70D3C2228112252002C2C36 /* ASIHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C2328112252002C2C36 /* LSASIHTTPRequestHook.h */,
+				C70D3C2428112252002C2C36 /* ASIHTTPRequestStub.m */,
+				C70D3C2528112252002C2C36 /* LSASIHTTPRequestAdapter.h */,
+				C70D3C2628112252002C2C36 /* LSASIHTTPRequestHook.m */,
+				C70D3C2728112252002C2C36 /* LSASIHTTPRequestAdapter.m */,
+				C70D3C2828112252002C2C36 /* ASIHTTPRequestStub.h */,
+			);
+			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		C70D3C2928112252002C2C36 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C2A28112252002C2C36 /* LSNSURLSessionHook.h */,
+				C70D3C2B28112252002C2C36 /* LSNSURLSessionHook.m */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
+		C70D3C2C28112252002C2C36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C2D28112252002C2C36 /* LSHTTPBody.h */,
+				C70D3C2E28112252002C2C36 /* LSHTTPRequest.h */,
+				C70D3C2F28112252002C2C36 /* LSHTTPResponse.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C70D3C3128112252002C2C36 /* Matchers */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C3228112252002C2C36 /* LSMatcheable.h */,
+				C70D3C3328112252002C2C36 /* LSMatcher.h */,
+				C70D3C3428112252002C2C36 /* LSStringMatcher.h */,
+				C70D3C3528112252002C2C36 /* NSRegularExpression+Matcheable.m */,
+				C70D3C3628112252002C2C36 /* LSRegexMatcher.h */,
+				C70D3C3728112252002C2C36 /* NSString+Matcheable.m */,
+				C70D3C3828112252002C2C36 /* NSData+Matcheable.m */,
+				C70D3C3928112252002C2C36 /* LSDataMatcher.m */,
+				C70D3C3A28112252002C2C36 /* LSMatcher.m */,
+				C70D3C3B28112252002C2C36 /* LSRegexMatcher.m */,
+				C70D3C3C28112252002C2C36 /* NSRegularExpression+Matcheable.h */,
+				C70D3C3D28112252002C2C36 /* LSStringMatcher.m */,
+				C70D3C3E28112252002C2C36 /* NSString+Matcheable.h */,
+				C70D3C3F28112252002C2C36 /* LSDataMatcher.h */,
+				C70D3C4028112252002C2C36 /* NSData+Matcheable.h */,
+			);
+			path = Matchers;
+			sourceTree = "<group>";
+		};
+		C70D3C4128112252002C2C36 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C4228112252002C2C36 /* NSData+Nocilla.h */,
+				C70D3C4328112252002C2C36 /* NSString+Nocilla.m */,
+				C70D3C4428112252002C2C36 /* NSData+Nocilla.m */,
+				C70D3C4528112252002C2C36 /* NSString+Nocilla.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C70D3C4628112252002C2C36 /* DSL */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C4728112252002C2C36 /* LSHTTPRequestDSLRepresentation.m */,
+				C70D3C4828112252002C2C36 /* LSStubRequestDSL.h */,
+				C70D3C4928112252002C2C36 /* LSStubResponseDSL.m */,
+				C70D3C4A28112252002C2C36 /* LSStubRequestDSL.m */,
+				C70D3C4B28112252002C2C36 /* LSHTTPRequestDSLRepresentation.h */,
+				C70D3C4C28112252002C2C36 /* LSStubResponseDSL.h */,
+			);
+			path = DSL;
+			sourceTree = "<group>";
+		};
+		C70D3C6B281123C4002C2C36 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C6C281123D9002C2C36 /* StubUtils.swift */,
+				C70D3C6E281123E4002C2C36 /* TestUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C70D3BD628111083002C2C36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70D3BED28111083002C2C36 /* MovieApiFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		C70D3B7A28110BE6002C2C36 /* Movie-SwiftUI-TCA */ = {
@@ -137,10 +533,12 @@
 				C70D3B7728110BE6002C2C36 /* Sources */,
 				C70D3B7828110BE6002C2C36 /* Frameworks */,
 				C70D3B7928110BE6002C2C36 /* Resources */,
+				C70D3BF528111083002C2C36 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C70D3BEF28111083002C2C36 /* PBXTargetDependency */,
 			);
 			name = "Movie-SwiftUI-TCA";
 			productName = "Movie-SwiftUI-TCA";
@@ -183,6 +581,43 @@
 			productReference = C70D3B9528110BE6002C2C36 /* Movie-SwiftUI-TCAUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C70D3BDA28111083002C2C36 /* MovieApiFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C70D3BF228111083002C2C36 /* Build configuration list for PBXNativeTarget "MovieApiFramework" */;
+			buildPhases = (
+				C70D3BD628111083002C2C36 /* Headers */,
+				C70D3BD728111083002C2C36 /* Sources */,
+				C70D3BD828111083002C2C36 /* Frameworks */,
+				C70D3BD928111083002C2C36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovieApiFramework;
+			productName = MovieApiFramework;
+			productReference = C70D3BDB28111083002C2C36 /* MovieApiFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C70D3BE328111083002C2C36 /* MovieApiFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C70D3BF628111083002C2C36 /* Build configuration list for PBXNativeTarget "MovieApiFrameworkTests" */;
+			buildPhases = (
+				C70D3BE028111083002C2C36 /* Sources */,
+				C70D3BE128111083002C2C36 /* Frameworks */,
+				C70D3BE228111083002C2C36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C70D3BE728111083002C2C36 /* PBXTargetDependency */,
+				C70D3BE928111083002C2C36 /* PBXTargetDependency */,
+			);
+			name = MovieApiFrameworkTests;
+			productName = MovieApiFrameworkTests;
+			productReference = C70D3BE428111083002C2C36 /* MovieApiFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +639,13 @@
 						CreatedOnToolsVersion = 13.3.1;
 						TestTargetID = C70D3B7A28110BE6002C2C36;
 					};
+					C70D3BDA28111083002C2C36 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					C70D3BE328111083002C2C36 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = C70D3B7A28110BE6002C2C36;
+					};
 				};
 			};
 			buildConfigurationList = C70D3B7628110BE5002C2C36 /* Build configuration list for PBXProject "Movie-SwiftUI-TCA" */;
@@ -222,6 +664,8 @@
 				C70D3B7A28110BE6002C2C36 /* Movie-SwiftUI-TCA */,
 				C70D3B8A28110BE6002C2C36 /* Movie-SwiftUI-TCATests */,
 				C70D3B9428110BE6002C2C36 /* Movie-SwiftUI-TCAUITests */,
+				C70D3BDA28111083002C2C36 /* MovieApiFramework */,
+				C70D3BE328111083002C2C36 /* MovieApiFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +691,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70D3BD928111083002C2C36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70D3BE228111083002C2C36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70D3C4E28112252002C2C36 /* README.md in Resources */,
+				C70D3C4D28112252002C2C36 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +739,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C70D3BD728111083002C2C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70D3C05281121F5002C2C36 /* GenresResponse.swift in Sources */,
+				C70D3BDF28111083002C2C36 /* MovieApiFramework.docc in Sources */,
+				C70D3BFB28112184002C2C36 /* MovieApi.swift in Sources */,
+				C70D3C03281121E6002C2C36 /* MovieApiResponse.swift in Sources */,
+				C70D3BFD2811218F002C2C36 /* MovieApiError.swift in Sources */,
+				C70D3C01281121C9002C2C36 /* Genre.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70D3BE028111083002C2C36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70D3C5328112252002C2C36 /* LSHTTPClientHook.m in Sources */,
+				C70D3C6D281123D9002C2C36 /* StubUtils.swift in Sources */,
+				C70D3C6F281123E4002C2C36 /* TestUtils.swift in Sources */,
+				C70D3C5C28112252002C2C36 /* NSRegularExpression+Matcheable.m in Sources */,
+				C70D3C6A2811234E002C2C36 /* MovieApiTests.swift in Sources */,
+				C70D3C6728112252002C2C36 /* LSStubRequestDSL.m in Sources */,
+				C70D3C5028112252002C2C36 /* LSStubResponse.m in Sources */,
+				C70D3C6428112252002C2C36 /* NSData+Nocilla.m in Sources */,
+				C70D3C5728112252002C2C36 /* LSHTTPStubURLProtocol.m in Sources */,
+				C70D3C5B28112252002C2C36 /* LSNSURLSessionHook.m in Sources */,
+				C70D3C5F28112252002C2C36 /* LSDataMatcher.m in Sources */,
+				C70D3C5828112252002C2C36 /* ASIHTTPRequestStub.m in Sources */,
+				C70D3C4F28112252002C2C36 /* LSStubRequest.m in Sources */,
+				C70D3C6228112252002C2C36 /* LSStringMatcher.m in Sources */,
+				C70D3C5528112252002C2C36 /* LSNSURLHook.m in Sources */,
+				C70D3C5D28112252002C2C36 /* NSString+Matcheable.m in Sources */,
+				C70D3C6028112252002C2C36 /* LSMatcher.m in Sources */,
+				C70D3C5A28112252002C2C36 /* LSASIHTTPRequestAdapter.m in Sources */,
+				C70D3C6128112252002C2C36 /* LSRegexMatcher.m in Sources */,
+				C70D3C5228112252002C2C36 /* LSHTTPRequestDiff.m in Sources */,
+				C70D3C5128112252002C2C36 /* LSNocilla.m in Sources */,
+				C70D3C6628112252002C2C36 /* LSStubResponseDSL.m in Sources */,
+				C70D3C6528112252002C2C36 /* LSHTTPRequestDSLRepresentation.m in Sources */,
+				C70D3C5E28112252002C2C36 /* NSData+Matcheable.m in Sources */,
+				C70D3C5628112252002C2C36 /* NSURLRequest+DSL.m in Sources */,
+				C70D3C5428112252002C2C36 /* NSURLRequest+LSHTTPRequest.m in Sources */,
+				C70D3C6328112252002C2C36 /* NSString+Nocilla.m in Sources */,
+				C70D3C5928112252002C2C36 /* LSASIHTTPRequestHook.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +799,21 @@
 			isa = PBXTargetDependency;
 			target = C70D3B7A28110BE6002C2C36 /* Movie-SwiftUI-TCA */;
 			targetProxy = C70D3B9628110BE6002C2C36 /* PBXContainerItemProxy */;
+		};
+		C70D3BE728111083002C2C36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C70D3BDA28111083002C2C36 /* MovieApiFramework */;
+			targetProxy = C70D3BE628111083002C2C36 /* PBXContainerItemProxy */;
+		};
+		C70D3BE928111083002C2C36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C70D3B7A28110BE6002C2C36 /* Movie-SwiftUI-TCA */;
+			targetProxy = C70D3BE828111083002C2C36 /* PBXContainerItemProxy */;
+		};
+		C70D3BEF28111083002C2C36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C70D3BDA28111083002C2C36 /* MovieApiFramework */;
+			targetProxy = C70D3BEE28111083002C2C36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +935,7 @@
 		C70D3BA028110BE6002C2C36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +965,7 @@
 		C70D3BA128110BE6002C2C36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +1068,104 @@
 			};
 			name = Release;
 		};
+		C70D3BF328111083002C2C36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 992QM9NYZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexch.MovieApiFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C70D3BF428111083002C2C36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 992QM9NYZM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexch.MovieApiFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C70D3BF728111083002C2C36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 992QM9NYZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexch.MovieApiFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieApiFrameworkTests/Dependency/MovieApiFrameworkTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movie-SwiftUI-TCA.app/Movie-SwiftUI-TCA";
+			};
+			name = Debug;
+		};
+		C70D3BF828111083002C2C36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 992QM9NYZM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexch.MovieApiFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "MovieApiFrameworkTests/Dependency/MovieApiFrameworkTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movie-SwiftUI-TCA.app/Movie-SwiftUI-TCA";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +1201,24 @@
 			buildConfigurations = (
 				C70D3BA628110BE6002C2C36 /* Debug */,
 				C70D3BA728110BE6002C2C36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70D3BF228111083002C2C36 /* Build configuration list for PBXNativeTarget "MovieApiFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70D3BF328111083002C2C36 /* Debug */,
+				C70D3BF428111083002C2C36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C70D3BF628111083002C2C36 /* Build configuration list for PBXNativeTarget "MovieApiFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C70D3BF728111083002C2C36 /* Debug */,
+				C70D3BF828111083002C2C36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

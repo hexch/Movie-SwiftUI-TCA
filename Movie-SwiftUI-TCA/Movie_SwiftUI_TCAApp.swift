@@ -11,7 +11,11 @@ import SwiftUI
 struct Movie_SwiftUI_TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TestAppView(store: .init(
+                initialState: TestAppState(),
+                reducer: testAppReducer,
+                environment: TestAppEnveroment.live
+            ))
         }
     }
 }

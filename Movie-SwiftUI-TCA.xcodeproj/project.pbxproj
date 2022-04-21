@@ -54,6 +54,9 @@
 		C70D3C6A2811234E002C2C36 /* MovieApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C692811234E002C2C36 /* MovieApiTests.swift */; };
 		C70D3C6D281123D9002C2C36 /* StubUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C6C281123D9002C2C36 /* StubUtils.swift */; };
 		C70D3C6F281123E4002C2C36 /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C6E281123E4002C2C36 /* TestUtils.swift */; };
+		C70D3C7128112753002C2C36 /* TestAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C7028112753002C2C36 /* TestAppView.swift */; };
+		C70D3C75281127B0002C2C36 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70D3C74281127B0002C2C36 /* TestApp.swift */; };
+		C769DC8228112AF900978E10 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = C769DC8128112AF900978E10 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -190,6 +193,8 @@
 		C70D3C692811234E002C2C36 /* MovieApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiTests.swift; sourceTree = "<group>"; };
 		C70D3C6C281123D9002C2C36 /* StubUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubUtils.swift; sourceTree = "<group>"; };
 		C70D3C6E281123E4002C2C36 /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		C70D3C7028112753002C2C36 /* TestAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppView.swift; sourceTree = "<group>"; };
+		C70D3C74281127B0002C2C36 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +202,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C769DC8228112AF900978E10 /* ComposableArchitecture in Frameworks */,
 				C70D3BF028111083002C2C36 /* MovieApiFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +266,8 @@
 		C70D3B7D28110BE6002C2C36 /* Movie-SwiftUI-TCA */ = {
 			isa = PBXGroup;
 			children = (
+				C70D3C732811277F002C2C36 /* TCA */,
+				C70D3C7228112778002C2C36 /* Views */,
 				C70D3B7E28110BE6002C2C36 /* Movie_SwiftUI_TCAApp.swift */,
 				C70D3B8028110BE6002C2C36 /* ContentView.swift */,
 				C70D3B8228110BE6002C2C36 /* Assets.xcassets */,
@@ -512,6 +520,22 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C70D3C7228112778002C2C36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C7028112753002C2C36 /* TestAppView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C70D3C732811277F002C2C36 /* TCA */ = {
+			isa = PBXGroup;
+			children = (
+				C70D3C74281127B0002C2C36 /* TestApp.swift */,
+			);
+			path = TCA;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -541,6 +565,9 @@
 				C70D3BEF28111083002C2C36 /* PBXTargetDependency */,
 			);
 			name = "Movie-SwiftUI-TCA";
+			packageProductDependencies = (
+				C769DC8128112AF900978E10 /* ComposableArchitecture */,
+			);
 			productName = "Movie-SwiftUI-TCA";
 			productReference = C70D3B7B28110BE6002C2C36 /* Movie-SwiftUI-TCA.app */;
 			productType = "com.apple.product-type.application";
@@ -657,6 +684,9 @@
 				Base,
 			);
 			mainGroup = C70D3B7228110BE5002C2C36;
+			packageReferences = (
+				C769DC8028112AF900978E10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = C70D3B7C28110BE6002C2C36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -717,6 +747,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70D3C7128112753002C2C36 /* TestAppView.swift in Sources */,
+				C70D3C75281127B0002C2C36 /* TestApp.swift in Sources */,
 				C70D3B8128110BE6002C2C36 /* ContentView.swift in Sources */,
 				C70D3B7F28110BE6002C2C36 /* Movie_SwiftUI_TCAApp.swift in Sources */,
 			);
@@ -868,7 +900,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -922,7 +954,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1224,6 +1256,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C769DC8028112AF900978E10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C769DC8128112AF900978E10 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C769DC8028112AF900978E10 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C70D3B7328110BE5002C2C36 /* Project object */;
 }

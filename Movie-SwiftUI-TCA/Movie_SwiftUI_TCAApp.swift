@@ -6,16 +6,24 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct Movie_SwiftUI_TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            TestAppView(store: .init(
-                initialState: TestAppState(),
-                reducer: testAppReducer,
-                environment: TestAppEnveroment.live
-            ))
+            HomeView(
+                store: Store(
+                    initialState: .init(),
+                    reducer: homeReducer,
+                    environment: HomeEnveroment()
+                )
+            )
+            //            TestAppView(store: .init(
+            //                initialState: TestAppState(),
+            //                reducer: testAppReducer,
+            //                environment: TestAppEnveroment.live
+            //            ))
         }
     }
 }

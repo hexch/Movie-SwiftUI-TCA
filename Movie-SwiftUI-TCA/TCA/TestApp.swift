@@ -17,18 +17,14 @@ struct TestAppState:Equatable{
 enum TestAppAction{
     case loadGenres
     case genresLoaded(Result<GenresResponse,MovieApiError>)
+    
 }
 struct TestAppEnveroment{
     var mainQueue: AnySchedulerOf<DispatchQueue>
     var movieApiClient: MovieApi
     static let live = TestAppEnveroment(
         mainQueue: .main,
-        movieApiClient: MovieApi(
-            urlSession: .shared,
-            decoder: JSONDecoder(),
-            baseUrl: URL(string: "https://api.themoviedb.org/3")!,
-            apiKey: "2cbc7e68dc9b20f28644bae3a5f10b57"
-        )
+        movieApiClient: .shared
     )
 }
 let testAppReducer = Reducer<TestAppState,TestAppAction,TestAppEnveroment>{
@@ -37,10 +33,8 @@ let testAppReducer = Reducer<TestAppState,TestAppAction,TestAppEnveroment>{
     case .loadGenres:
         struct CancelableId:Hashable{}
         state.loadingGenres = true
-        let publisher:AnyPublisher<GenresResponse,MovieApiError> =
-            env.movieApiClient.createPublisher(with: .getGenres)
         
-        return publisher
+        return env.movieApiClient.getGenresPublisher
             .receive(on: env.mainQueue)
             .eraseToEffect()
             .catchToEffect(TestAppAction.genresLoaded)

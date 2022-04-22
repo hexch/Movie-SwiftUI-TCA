@@ -30,4 +30,7 @@ public extension MovieApi{
     func getMovieDetailPublisher(_ movieId:Int, appendToResponse:String? = nil)-> AnyPublisher<Movie, MovieApiError> {
         createPublisher(with: .getDetail(movieId: movieId, appendToResponse: appendToResponse))
     }
+    func getCreditPublisher(_ movieId:Int)-> AnyPublisher<CastResponse, MovieApiError> {
+        createPublisher(with: .getCredits(movieId: movieId))
+    }
 }

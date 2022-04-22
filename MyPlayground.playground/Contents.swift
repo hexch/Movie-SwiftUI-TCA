@@ -38,3 +38,16 @@ popularPublisher.receive(on: RunLoop.main)
             print(response)
         }
     ).store(in: &cancelables)
+
+movieApi.getCreditPublisher(568124)
+    .receive(on: RunLoop.main)
+    .sink(
+        receiveCompletion: {
+            completion in
+            print(completion)
+        },
+        receiveValue: {
+            response in
+            print(response)
+        }
+    ).store(in: &cancelables)

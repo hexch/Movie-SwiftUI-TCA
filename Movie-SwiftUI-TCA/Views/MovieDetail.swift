@@ -15,25 +15,25 @@ struct MovieDetail: View {
         WithViewStore(store){viewStore in
             List{
                 MovieDetailMainInfoView(
-                    movieId: viewStore.movieId,
-                    backdropUrl: viewStore.backdropUrl,
-                    releaseDate: viewStore.releaseDate,
-                    runtime: viewStore.runtime,
-                    rating: viewStore.rating,
-                    voteCount: viewStore.voteCount,
-                    genres: viewStore.genres
+                    movie: viewStore.movie
                 )
-                if !viewStore.overview.isEmpty{
+                if !viewStore.movie.overview.isEmpty{
                     Section(header:Text("Overview")){
-                        Text(viewStore.overview)
+                        Text(viewStore.movie.overview)
                             .font(.body)
                     }
                 }
+                MovieDetailPeople(
+                    store: Store(
+                        initialState: MovieDetailPeopleState(movieId: viewStore.movie.id),
+                        reducer: movieDetailPeopleReducer.debug(),
+                        environment: GlobalEveroment.live)
+                )
             }
             .onAppear{
                 viewStore.send(.load)
             }
-            .navigationTitle(viewStore.title)
+            .navigationTitle(viewStore.movie.title)
         }
     }
 }

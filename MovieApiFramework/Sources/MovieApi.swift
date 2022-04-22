@@ -148,6 +148,7 @@ public struct MovieApi{
                 .eraseToAnyPublisher()
         }
         return self.urlSession.dataTaskPublisher(for: request)
+        
             .tryMap(\.data)
             .decode(type: T.self, decoder: self.decoder)
             .mapError{

@@ -10,34 +10,42 @@ import MovieApiFramework
 import ComposableArchitecture
 
 struct MovieDetailState:Equatable{
-    var loading = false
-    
-    let movieId: Int
-    let title:String
-    var backdropUrl: URL
-    var releaseDate: String?
-    var runtime: Int?
-    var rating: Float?
-    var voteCount: Int?
-    var genres: [Genre]
-    
-    var overview:String
-    
-    init(movie:Movie){
-        movieId = movie.id
-        backdropUrl = movie.backdropUrl
-        releaseDate = movie.release_date
-        runtime = movie.runtime
-        rating = movie.vote_average
-        voteCount = movie.vote_count
-        genres = movie.genres ?? []
-        title = movie.title
-        overview = movie.overview
-    }
+    var movie: Movie
 }
+struct MovieDetailPeopleState: Equatable{
+    let movieId:Int
+    var crews: [People] = []
+    var casts: [People] = []
+}
+
 enum MovieDetailAction{
     case load
     case loaded(Result<Movie,MovieApiError>)
+}
+enum MovieDetailPeopleAction{
+    case load
+    case loaded(Result<CastResponse,MovieApiError>)
+}
+let movieDetailPeopleReducer = Reducer<MovieDetailPeopleState,MovieDetailPeopleAction,GlobalEveroment>{
+    state, action, enviroment in
+    switch action {
+    case .load:
+        struct CancelableId:Hashable{}
+        
+        return enviroment.movieApiClient
+            .getCreditPublisher(state.movieId)
+            .receive(on: enviroment.mainQueue)
+            .catchToEffect(MovieDetailPeopleAction.loaded)
+            .cancellable(id: CancelableId())
+    case let .loaded(.failure(error)):
+        print(error)
+        return .none
+    case let .loaded(.success(response)):
+        print(response)
+        state.casts = response.cast
+        state.crews = response.crew
+        return .none
+    }
 }
 let movieDetailReducer = Reducer<MovieDetailState,MovieDetailAction,GlobalEveroment>{
     state,action,enviroment in
@@ -46,19 +54,15 @@ let movieDetailReducer = Reducer<MovieDetailState,MovieDetailAction,GlobalEverom
     case .load:
         struct CancelableId:Hashable{}
         
-        state.loading = true
         return enviroment.movieApiClient
-            .getMovieDetailPublisher(state.movieId)
+            .getMovieDetailPublisher(state.movie.id)
             .receive(on: enviroment.mainQueue)
             .catchToEffect(MovieDetailAction.loaded)
             .cancellable(id: CancelableId())
     case let .loaded(.failure(error)):
-        state.loading = false
         return .none
     case let .loaded(.success(movie)):
-        state.loading = false
-        state.genres = movie.genres ?? []
-        state.overview = movie.overview
+        state.movie = movie
         return .none
     }
-}.debug()
+}

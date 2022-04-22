@@ -12,9 +12,6 @@ import MovieApiFramework
 struct MovieListView<Content: View>: View {
     let store: Store<MovieListState,MovieListAction>
     let title: Content
-    @State private var isPresented = false
-    
-    var movieShowDetail:Movie?
     init(
         store:Store<MovieListState,MovieListAction>,
         @ViewBuilder title:()-> Content
@@ -33,19 +30,13 @@ struct MovieListView<Content: View>: View {
                     if viewStore.loading{
                         SimpleMoviePosterPlaceHolderView()
                     }else{
-                        MoviePostersView(
-                            movies: viewStore.movies,
-                            onTap: {
-                                self.isPresented = true
-                                viewStore.send(.movieTapped($0))
-                            }
-                        )
+                        MoviePostersView(movies: viewStore.movies)
                     }
                 }
                 .onAppear{
                     viewStore.send(.load)
                 }
-                .fullScreenCover(isPresented: $isPresented, content: {MovieDetailView(movie: viewStore.tappedMovie!)})
+                
             }
         }
         .padding(.leading, 5)

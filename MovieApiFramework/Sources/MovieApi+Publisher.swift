@@ -27,4 +27,7 @@ public extension MovieApi{
     func getUpcomingPublisher(_ page:Int) -> AnyPublisher<PaginatedResponse<Movie>, MovieApiError>{
         createPublisher(with: .getUpcoming(page: page))
     }
+    func getMovieDetailPublisher(_ movieId:Int, appendToResponse:String? = nil)-> AnyPublisher<Movie, MovieApiError> {
+        createPublisher(with: .getDetail(movieId: movieId, appendToResponse: appendToResponse))
+    }
 }

@@ -18,12 +18,7 @@ struct Movie_SwiftUI_TCAApp: App {
                     reducer: homeReducer,
                     environment: HomeEnveroment()
                 )
-            )
-            //            TestAppView(store: .init(
-            //                initialState: TestAppState(),
-            //                reducer: testAppReducer,
-            //                environment: TestAppEnveroment.live
-            //            ))
+            ).navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }

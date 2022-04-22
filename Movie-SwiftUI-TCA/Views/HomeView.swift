@@ -34,8 +34,8 @@ struct HomeView: View {
                         }
                     }
                 }
+                .navigationTitle("Movie Library")
             }
-            .navigationTitle("Movie Library")
         }
     }
 }

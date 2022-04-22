@@ -35,33 +35,33 @@ public struct Movie: Codable, Identifiable, Hashable, MovieApiResponse {
         return formatter
     }()
     
-    let genres: [Genre]?
-    let runtime: Int?
-    let status: String?
-    let video: Bool
+    public let genres: [Genre]?
+    public let runtime: Int?
+    public let status: String?
+    public let video: Bool
     
-    var keywords: Keywords?
-    var images: MovieImages?
+    public var keywords: Keywords?
+    public var images: MovieImages?
     
-    var production_countries: [productionCountry]?
+    public var production_countries: [productionCountry]?
     
-    var character: String?
-    var department: String?
+    public var character: String?
+    public var department: String?
     
-    struct Keywords: Codable, Hashable {
-        let keywords: [Keyword]?
+    public struct Keywords: Codable, Hashable {
+        public let keywords: [Keyword]?
     }
     
-    struct MovieImages: Codable, Hashable {
-        let posters: [ImageData]?
-        let backdrops: [ImageData]?
+    public struct MovieImages: Codable, Hashable {
+        public let posters: [ImageData]?
+        public let backdrops: [ImageData]?
     }
     
-    struct productionCountry: Codable, Identifiable, Hashable {
-        var id: String {
+    public struct productionCountry: Codable, Identifiable, Hashable {
+        public var id: String {
             name
         }
-        let name: String
+        public let name: String
     }
 }
 public extension Movie{

@@ -30,7 +30,29 @@ struct MovieListView<Content: View>: View {
                     if viewStore.loading{
                         SimpleMoviePosterPlaceHolderView()
                     }else{
-                        MoviePostersView(movies: viewStore.movies)
+                        ScrollView(.horizontal, showsIndicators: false){
+                            HStack{
+                                ForEach(viewStore.movies,id: \.id){movie in
+                                    NavigationLink(
+                                        destination: IfLetStore(
+                                            store.scope(
+                                                state: \.movieDetailState,
+                                                action: MovieListAction.movieDetail
+                                            ),
+                                            then: MovieDetail.init(store:)
+                                        ),
+                                        isActive: viewStore.binding(
+                                            get: { $0.movieDetailState != nil },
+                                            send: { $0 ? MovieListAction.presentDetail(movie):
+                                                MovieListAction.presentDetail(nil)
+                                            }
+                                        )
+                                    ){
+                                        SimpleMoviePosterView(movie: movie)
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
                 .onAppear{

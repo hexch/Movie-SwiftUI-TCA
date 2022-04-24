@@ -24,14 +24,15 @@ struct MovieDetail: View {
                     }
                 }
                 MovieDetailPeople(
-                    store: Store(
-                        initialState: MovieDetailPeopleState(movieId: viewStore.movie.id),
-                        reducer: movieDetailPeopleReducer.debug(),
-                        environment: GlobalEveroment.live)
+                    store: store.scope(
+                        state: \.peopleState,
+                        action: MovieDetailAction.people
+                    )
                 )
             }
             .onAppear{
                 viewStore.send(.load)
+                viewStore.send(.people(.load))
             }
             .navigationTitle(viewStore.movie.title)
         }

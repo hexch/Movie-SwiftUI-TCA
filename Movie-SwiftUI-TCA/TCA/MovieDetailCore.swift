@@ -11,6 +11,11 @@ import ComposableArchitecture
 
 struct MovieDetailState:Equatable{
     var movie: Movie
+    var peopleState: MovieDetailPeopleState
+    init(movie:Movie){
+        self.movie = movie
+        self.peopleState = .init(movieId: movie.id)
+    }
 }
 struct MovieDetailPeopleState: Equatable{
     let movieId:Int
@@ -21,6 +26,7 @@ struct MovieDetailPeopleState: Equatable{
 enum MovieDetailAction{
     case load
     case loaded(Result<Movie,MovieApiError>)
+    case people(MovieDetailPeopleAction)
 }
 enum MovieDetailPeopleAction{
     case load
@@ -46,23 +52,32 @@ let movieDetailPeopleReducer = Reducer<MovieDetailPeopleState,MovieDetailPeopleA
         state.crews = response.crew
         return .none
     }
-}
-let movieDetailReducer = Reducer<MovieDetailState,MovieDetailAction,GlobalEveroment>{
-    state,action,enviroment in
+}.debug()
+let movieDetailReducer = Reducer<MovieDetailState,MovieDetailAction,GlobalEveroment>.combine(
+    movieDetailPeopleReducer
+        .pullback(
+            state: \.peopleState,
+            action: /MovieDetailAction.people,
+            environment: {$0}
+        ),
     
-    switch action{
-    case .load:
-        struct CancelableId:Hashable{}
-        
-        return enviroment.movieApiClient
-            .getMovieDetailPublisher(state.movie.id)
-            .receive(on: enviroment.mainQueue)
-            .catchToEffect(MovieDetailAction.loaded)
-            .cancellable(id: CancelableId())
-    case let .loaded(.failure(error)):
-        return .none
-    case let .loaded(.success(movie)):
-        state.movie = movie
-        return .none
-    }
-}
+        .init{
+            state, action, env in
+            switch action {
+            case .load:
+                struct CancelId: Hashable{}
+                
+                return env.movieApiClient.getMovieDetailPublisher(state.movie.id)
+                    .receive(on: env.mainQueue)
+                    .catchToEffect(MovieDetailAction.loaded)
+                    .cancellable(id: CancelId())
+            case let .loaded(.failure(error)):
+                return .none
+            case let .loaded(.success(response)):
+                state.movie = response
+                return .none
+            case .people:
+                return .none
+            }
+        }
+).debug()

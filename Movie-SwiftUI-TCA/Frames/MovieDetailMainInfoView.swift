@@ -77,7 +77,7 @@ struct MovieDetailMainInfoView: View {
 struct MovieDetailMainInfoView_Previews: PreviewProvider {
     
     static var previews: some View {
-        let movie = Movie.sample
+        
         return List{
             MovieDetailMainInfoView(
                 movie: .sample

@@ -52,7 +52,7 @@ let movieDetailPeopleReducer = Reducer<MovieDetailPeopleState,MovieDetailPeopleA
         state.crews = response.crew
         return .none
     }
-}.debug()
+}
 let movieDetailReducer = Reducer<MovieDetailState,MovieDetailAction,GlobalEveroment>.combine(
     movieDetailPeopleReducer
         .pullback(
@@ -80,4 +80,4 @@ let movieDetailReducer = Reducer<MovieDetailState,MovieDetailAction,GlobalEverom
                 return .none
             }
         }
-).debug()
+)

@@ -71,6 +71,9 @@ let movieListReducer  = Reducer<MovieListState, MovieListAction, MovieListEnvero
         
         switch action {
         case .load:
+            guard state.paginatedResponse == nil else{
+                return .none
+            }
             struct CancelableId: Hashable {}
             
             state.loading = true
@@ -97,5 +100,5 @@ let movieListReducer  = Reducer<MovieListState, MovieListAction, MovieListEnvero
         case .movieDetail:
             return .none
         }
-    }
+    }.debug()
 )
